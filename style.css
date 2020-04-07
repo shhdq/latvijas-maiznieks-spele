@@ -16,6 +16,7 @@ a {
 
 /* Container */
 .container {
+  overflow: hidden;
   padding: 1em;
   font-family: "Roboto", sans-serif;
   color: white;
