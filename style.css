@@ -94,21 +94,9 @@ main {
     height: 100vh;
   }
 }
-@media all and (max-width: 1000px) {
+@media (orientation: landscape) {
   main {
-    width: 100vw;
-    height: 100vh;
-    background: none;
-    padding: 0;
-  }
-  .col-two {
-    display: none;
-  }
-  .col-one {
-    width: 100vw;
-    height: 100vh;
-  }
-  .underline {
-    width: 10rem;
+    background-image: none;
+    color: red;
   }
 }
