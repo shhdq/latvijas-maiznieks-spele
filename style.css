@@ -1,94 +1,96 @@
-/*
-Programmed By Madars Balodis
-*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
-/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-}
-/* END RESET */
-
-/* Container */
-html {
-  box-sizing: border-box;
+body {
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
+}
+.mob {
   color: white;
-  font: Black Roboto;
+  background-image: url("./assets/Mobile/Start-page/BG-mob.png");
   width: 100vw;
   height: 100vh;
-  background: #2e3092 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-.container {
-  max-width: 100vw;
-  max-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.underline {
-  margin: 2em 0;
-  width: 250px;
-  height: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-.main-content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 36px;
 }
-h1,
-h3 {
-  text-transform: uppercase;
+.logo {
+  margin: 17px 18px;
+  width: 103px;
+  height: 81px;
 }
-h1 {
-  font-size: 42px;
+.mob h1 {
+  font-size: 35px;
   font-weight: bold;
 }
-h3 {
-  font-size: 28px;
+.mob h2 {
+  font-size: 23px;
   font-weight: 400;
 }
-.background-image {
-  opacity: 1;
-  width: 300px;
-  height: 200px;
-  background: transparent url("assets/final\ comp.png") 0% 0% no-repeat
-    padding-box;
+.underline {
+  margin: 1.5rem 0;
+  width: 225px;
+  height: 1px;
+  background-color: white;
 }
 .play-btn {
-  margin: 36px 0;
-  color: white;
   width: 229px;
   height: 49px;
-  background: #ffffff57 0% 0% no-repeat padding-box;
-  border: 4px solid #ffffff;
-  border-radius: 50px;
-  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: 255, 255, 255, 0.34;
+  border: 4px solid #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
   font-size: 30px;
 }
-@media only screen and (min-width: 800px) {
-  .container {
+.desktop img {
+  display: none;
+}
+@media only screen and (min-width: 920px) {
+  main {
+    position: absolute;
+    padding: 59px 109px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    background-color: lightblue;
+    background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mob {
+    width: 100%;
+    height: auto;
+    flex: 1;
+  }
+  .underline {
+    width: 120px;
+  }
+  .mob img {
+    display: none;
+  }
+  .play-btn {
+    width: 10rem;
+    height: 4rem;
+    font-size: 35px;
+  }
+  .desktop {
+    width: 100vw;
+    height: auto;
+    flex: 2;
+    background-color: brown;
+    padding: 10rem;
   }
 }
