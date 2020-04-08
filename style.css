@@ -97,6 +97,15 @@ main {
     height: 20px;
   }
 }
+@media (max-width: 800px) {
+  .col-one {
+    justify-content: space-evenly;
+  }
+  .play-btn {
+    width: 70%;
+    height: 40px;
+  }
+}
 @media (max-width: 700px) {
   main {
     background: none;
@@ -130,6 +139,7 @@ main {
   .play-btn {
     width: 70%;
     height: 40px;
+    font-size: 1.5em;
   }
   .first-break {
     display: none;
