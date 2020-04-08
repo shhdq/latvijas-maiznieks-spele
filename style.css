@@ -1,109 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-.mob {
-  color: white;
-  background-image: url("./assets/Mobile/Start-page/BG-mob.png");
+main {
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 60px 110px;
+  background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
+  background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 36px;
 }
-.logo {
-  margin: 17px 18px;
-  width: 103px;
-  height: 81px;
+.col-one {
+  background-color: #2e3092;
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url("./assets/Desktop/1-Start-page/BG-bread-drawings.png");
+  width: 60%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.mob h1 {
-  font-size: 35px;
-  font-weight: bold;
-}
-.mob h2 {
-  font-size: 23px;
-  font-weight: 400;
+.col-one .logo {
+  margin-bottom: 2rem;
+  width: 40%;
 }
 .underline {
-  margin: 1.5rem 0;
-  width: 225px;
+  margin: 1rem 0;
+  width: 45%;
   height: 1px;
   background-color: white;
 }
-.mob img {
-  margin: 1rem 0;
+.col-one h3 {
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
+.col-one .mobile-image {
+  display: none;
+}
+
 .play-btn {
-  width: 229px;
-  height: 49px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: 255, 255, 255, 0.34;
-  border: 4px solid #ffffff;
+  background-color: #ffffff57;
+  font-size: 1em;
+  width: 140px;
+  height: 30px;
+  border: 2px solid #ffffff;
   border-radius: 50px;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 30px;
+  color: white;
 }
-.desktop img {
-  display: none;
+.col-two {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media only screen and (min-width: 800px) {
+.col-two .desktop-image {
+  width: 80%;
+  height: auto;
+}
+@media only screen and (max-width: 1000px) {
   main {
-    position: absolute;
-    padding: 59px 109px;
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e3092;
+    background-image: url("./assets/Desktop/1-Start-page/BG-bread-drawings.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .mob {
-    flex: 1;
-    height: auto;
+  .col-one {
+    background: none;
   }
-  .mob .logo {
-    display: block;
-  }
-  .mob h1 {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .mob h2 {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  .underline {
-    width: 120px;
-  }
-  .mob img {
+  .col-two {
     display: none;
   }
-  .play-btn {
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
+  .col-one h1 {
+    font-size: 3em;
   }
-  .desktop {
-    width: 100%;
-    height: auto;
-    flex: 2;
-    background-color: brown;
+  .col-one h3 {
+    font-size: 2em;
+  }
+  .play-btn {
+    width: 250px;
+    height: 60px;
+    border: 2px solid #ffffff;
   }
 }
