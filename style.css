@@ -81,144 +81,31 @@ main {
   height: auto;
 }
 
-@media only screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
   main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e3092;
-    background-image: url("./assets/Desktop/1-Start-page/BG-bread-drawings.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .col-one {
     background: none;
+    padding: 0;
   }
   .col-two {
     display: none;
   }
-  .col-one h1 {
-    font-size: 3em;
-  }
-  .col-one h3 {
-    font-size: 2em;
-  }
-  .play-btn {
-    width: 250px;
-    height: 60px;
-    border: 2px solid #ffffff;
+  .col-one {
+    width: 100vw;
+    height: 100vh;
   }
 }
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 568px max-height: 320px) {
   main {
+    width: 100vw;
+    height: 100vh;
+    background: none;
     padding: 0;
-    margin: 0;
+  }
+  .col-two {
+    display: none;
   }
   .col-one {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .col-one h1 {
-    font-size: 3em;
-  }
-  .col-one h3 {
-    font-size: 2em;
-  }
-  .logo {
-    width: 400px;
-    height: 20vh;
-  }
-  .underline {
-    width: 200px;
-    height: 1px;
-    margin: 2rem 0;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  main {
-    padding: 10rem 0;
-    margin: 10rem 0;
-  }
-  .col-one {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .col-one h1 {
-    font-size: 3em;
-  }
-  .col-one h3 {
-    font-size: 2em;
-  }
-  .logo {
-    width: 400px;
-    height: 20vh;
-  }
-  .underline {
-    width: 200px;
-    height: 1px;
-    margin: 2rem 0;
-  }
-}
-@media only screen and (max-width: 400px) {
-  main {
-    padding: 0;
-    margin: 0;
-  }
-  .col-one {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .col-one h1 {
-    font-size: 3em;
-  }
-  .col-one h3 {
-    font-size: 2em;
-  }
-  .logo {
-    width: 400px;
-    height: 20vh;
-  }
-  .underline {
-    width: 200px;
-    height: 1px;
-    margin: 2rem 0;
-  }
-}
-@media only screen and (max-width: 600px) {
-  main {
-    padding: 0;
-    margin: 0;
-  }
-  .col-one {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .col-one h1 {
-    font-size: 3em;
-  }
-  .col-one h3 {
-    font-size: 2em;
-  }
-  .logo {
-    width: 400px;
-    height: 20vh;
-  }
-  .underline {
-    width: 200px;
-    height: 1px;
-    margin: 2rem 0;
   }
 }
