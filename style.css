@@ -94,7 +94,7 @@ main {
     height: 100vh;
   }
 }
-@media all and (max-width: 568px max-height: 320px) {
+@media all and (max-width: 1000px) {
   main {
     width: 100vw;
     height: 100vh;
@@ -107,5 +107,8 @@ main {
   .col-one {
     width: 100vw;
     height: 100vh;
+  }
+  .underline {
+    width: 10rem;
   }
 }
