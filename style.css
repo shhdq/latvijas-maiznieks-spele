@@ -11,11 +11,12 @@ body {
 }
 
 main {
+  position: absolute;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
   display: flex;
-  padding: 60px 110px;
+  padding: 2rem 4rem;
   background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
   background-color: #cccccc;
   background-position: center;
@@ -23,14 +24,16 @@ main {
   background-size: cover;
 }
 .col-one {
+  position: relative;
+  padding: 5rem 0;
+  box-sizing: border-box;
   background-color: #2e3092;
-  z-index: 10;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-image: url("./assets/Desktop/1-Start-page/BG-bread-drawings.png");
   width: 60%;
   height: 100%;
@@ -39,18 +42,19 @@ main {
   background-size: cover;
 }
 .col-one .logo {
-  margin-bottom: 2rem;
   width: 40%;
 }
 .underline {
-  margin: 1rem 0;
   width: 45%;
   height: 1px;
   background-color: white;
 }
+.col-one h1 {
+  font-size: 1.6em;
+}
 .col-one h3 {
   font-weight: 400;
-  margin-bottom: 2rem;
+  font-size: 1em;
 }
 .col-one .mobile-image {
   display: none;
@@ -62,8 +66,8 @@ main {
   justify-content: center;
   background-color: #ffffff57;
   font-size: 1em;
-  width: 140px;
-  height: 30px;
+  width: 50%;
+  height: 40px;
   border: 2px solid #ffffff;
   border-radius: 50px;
   text-decoration: none;
@@ -80,23 +84,45 @@ main {
   width: 80%;
   height: auto;
 }
-
-@media all and (max-width: 1000px) {
+.mobile-image {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .col-one {
+    padding: 1rem 0;
+    justify-content: space-evenly;
+  }
+  .play-btn {
+    width: 50%;
+    height: 20px;
+  }
+}
+@media (max-width: 700px) {
   main {
     background: none;
     padding: 0;
-  }
-  .col-two {
-    display: none;
   }
   .col-one {
     width: 100vw;
     height: 100vh;
   }
-}
-@media (orientation: landscape) {
-  main {
-    background-image: none;
-    color: red;
+  .col-one h1 {
+    font-size: 2.2em;
+  }
+  .col-one .mobile-image {
+    z-index: 1;
+    width: 80vw;
+    height: auto;
+    display: block;
+  }
+  .col-two {
+    display: none;
+  }
+  .play-btn {
+    width: 70%;
+    height: 40px;
+  }
+  .first-break {
+    display: none;
   }
 }
