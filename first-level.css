@@ -6,8 +6,6 @@
 }
 html {
   font-size: 12px;
-  width: 100vw;
-  height: 100vh;
 }
 main {
   box-sizing: border-box;
@@ -15,7 +13,7 @@ main {
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -100,7 +98,7 @@ main h1 {
   flex-direction: column;
   justify-content: space-evenly;
   width: 20rem;
-  height: 20rem;
+  height: 30rem;
   text-align: left;
 }
 .rules h3 {
@@ -109,6 +107,26 @@ main h1 {
 .rules p {
   font-weight: 200;
 }
-.tel-friend {
+.rules a {
+  color: #97a4ff;
+}
+.tell-friend {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center;
+}
+.social-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tell-friend img {
+  border-radius: 60%;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 6px 6px 20px #00000085;
+  border: 1px solid #00000000;
 }
