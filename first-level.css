@@ -8,12 +8,14 @@ html {
   font-size: 16px;
 }
 main {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   background-image: url("./assets/Desktop/levels/BG-blue.png");
   background-color: #cccccc;
@@ -23,8 +25,25 @@ main {
   color: white;
 }
 main h1 {
-  margin-top: 50px;
-  font-size: 4em;
+  font-size: 3em;
+  border-bottom: 1px solid white;
+}
+#match-counter,
+#match-max {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.level-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 28px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 14px;
+  text-align: center;
+  font: 16px;
+  color: #2e3092;
 }
 .grid {
   width: auto;
@@ -37,8 +56,8 @@ main h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6rem;
-  width: 5rem;
+  height: 7rem;
+  width: 6rem;
 }
 .front-face,
 .back-face {
@@ -48,4 +67,11 @@ main h1 {
 }
 .back-face {
   display: none;
+}
+.game-time p {
+  font-weight: lighter;
+}
+.game-time #time {
+  font-weight: bold;
+  font-size: 1.5em;
 }
