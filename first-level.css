@@ -143,7 +143,7 @@ main h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -241,4 +241,64 @@ main h1 {
   height: 2.4rem;
   border: none;
   background-color: #f49b00;
+}
+@media (max-width: 1000px) {
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 700px) {
+  main h1 {
+    font-size: 2.5em;
+  }
+  .counter p {
+    font-size: 1.5em;
+  }
+  #match-counter,
+  #match-max {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .level-counter {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .underline {
+    width: 70%;
+    height: 1px;
+    background-color: white;
+  }
+  .card {
+    width: 8rem;
+    height: 10rem;
+  }
+  .game-time {
+    padding: 2rem 0;
+    border-bottom: 1px solid white;
+    width: 20rem;
+  }
+  .game-time p {
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  .game-time #time {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .rules h3 {
+    margin: 1rem 0;
+    font-size: 1.5em;
+  }
+  .rules p {
+    margin: 1rem 0;
+    font-size: 1.2em;
+  }
+  .tell-friend {
+    margin: 1rem 0;
+  }
+  .tell-friend img {
+    margin: 1rem 0;
+    width: 4rem;
+    height: 4rem;
+  }
 }
