@@ -12,10 +12,10 @@ main {
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-image: url("./assets/Desktop/levels/BG-blue.png");
   background-color: #cccccc;
@@ -68,10 +68,27 @@ main h1 {
 .back-face {
   display: none;
 }
+
+.game-time {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+  width: 30vw;
+}
 .game-time p {
   font-weight: lighter;
 }
 .game-time #time {
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.rules {
+  width: 30vw;
+  text-align: left;
+}
+.rules h3 {
+  text-align: center;
+}
+.rules p {
+  font-weight: 200;
 }
