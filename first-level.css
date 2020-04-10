@@ -243,15 +243,8 @@ main h1 {
   background-color: #f49b00;
 }
 @media (max-width: 1000px) {
-}
-@media (max-width: 800px) {
   /* Registration Section */
 
-  .reg-content {
-    overflow: scroll;
-    width: 95vw;
-    height: 20rem;
-  }
   .reg-section h3 {
     font-size: 1.3em;
     margin-bottom: 1rem;
@@ -266,6 +259,8 @@ main h1 {
     width: 20rem;
     height: 2.7rem;
   }
+}
+@media (max-width: 800px) {
 }
 @media (max-width: 700px) {
   main h1 {
