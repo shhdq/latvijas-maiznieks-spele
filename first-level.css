@@ -323,7 +323,8 @@ main h1 {
     height: 89%;
   }
   .reg-section h3 {
-    font-size: 1.3em;
+    background-color: crimson;
+    font-size: 1.5em;
     margin-bottom: 1rem;
   }
   .reg-content .check-box-group p {
