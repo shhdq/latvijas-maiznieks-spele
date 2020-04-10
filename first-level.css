@@ -313,6 +313,9 @@ main h1 {
   }
 
   /* Registration Section */
+  .reg-section {
+    height: 100%;
+  }
   .reg-content {
     box-sizing: border-box;
     width: 95vw;
