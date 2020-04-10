@@ -247,8 +247,8 @@ main h1 {
   .reg-content {
     padding: 10rem;
     box-sizing: border-box;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 90%;
   }
 }
 @media (max-width: 700px) {
@@ -313,10 +313,10 @@ main h1 {
   }
 
   /* Registration Section */
-
   .reg-content {
     box-sizing: border-box;
     width: 95vw;
+    height: 89%;
   }
   .reg-section h3 {
     font-size: 1.3em;
@@ -331,5 +331,30 @@ main h1 {
   .send-btn {
     width: 20rem;
     height: 2.7rem;
+  }
+}
+
+@media (max-height: 320px) {
+  /* Registration Section */
+  .reg-content {
+    box-sizing: border-box;
+    width: 70%;
+    height: 90%;
+  }
+  .reg-content img {
+    display: none;
+  }
+  .reg-content form {
+    width: 25rem;
+  }
+  .reg-content .btn-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: brown;
+  }
+  .reg-content .send-btn {
+    width: 100%;
+    align-items: center;
   }
 }
