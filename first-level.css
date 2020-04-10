@@ -336,3 +336,9 @@ main h1 {
     height: 2.7rem;
   }
 }
+
+@media (max-height: 450px) {
+  .reg-content img {
+    display: none;
+  }
+}
