@@ -314,6 +314,7 @@ main h1 {
 
   /* Registration Section */
   .reg-section {
+    overflow-y: scroll;
     height: 100%;
   }
   .reg-content {
