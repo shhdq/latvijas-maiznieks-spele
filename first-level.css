@@ -343,3 +343,11 @@ main h1 {
     display: none;
   }
 }
+@media (max-height: 500px) {
+  .reg-content {
+    width: 95%;
+  }
+  .reg-content img {
+    display: none;
+  }
+}
