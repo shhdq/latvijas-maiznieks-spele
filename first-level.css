@@ -9,14 +9,12 @@ html {
   font-size: 12px;
 }
 main {
-  overflow: hidden;
   position: absolute;
   box-sizing: border-box;
   padding: 2rem 0;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -27,10 +25,11 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  background-size: 100% 100%;
 }
 .top-section {
   padding: 0 2rem;
-  height: 15rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
