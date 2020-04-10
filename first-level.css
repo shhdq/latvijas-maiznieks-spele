@@ -310,7 +310,6 @@ main h1 {
   /* Registration Section */
   .reg-section {
     box-sizing: border-box;
-    padding: 4rem 2rem;
     background-color: rgb(87, 107, 209, 0.5);
     position: fixed;
     top: 0;
@@ -324,7 +323,7 @@ main h1 {
   .reg-content {
     box-sizing: border-box;
     padding: 3rem 0;
-    width: 100vw;
+    width: 95vw;
     position: fixed;
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -400,19 +399,10 @@ main h1 {
   }
   .btn-section {
     width: 20rem;
-    display: flex;
-    justify-content: center;
   }
 
   .send-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    border-radius: 50px;
-    width: 10rem;
-    height: 2.4rem;
-    border: none;
-    background-color: #f49b00;
+    width: 20rem;
+    height: 2.7rem;
   }
 }
