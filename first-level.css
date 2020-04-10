@@ -285,6 +285,7 @@ main h1 {
     font-size: 2em;
   }
   .rules {
+    width: 25rem;
     margin: 2rem 0;
   }
   .rules h3 {
