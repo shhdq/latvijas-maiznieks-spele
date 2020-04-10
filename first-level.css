@@ -326,7 +326,9 @@ main h1 {
     font-size: 1.3em;
     margin-bottom: 1rem;
   }
-
+  .reg-content .check-box-group p {
+    text-align: right;
+  }
   .btn-section {
     margin: 1rem 0;
     width: 20rem;
