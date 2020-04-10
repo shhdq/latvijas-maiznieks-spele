@@ -16,7 +16,7 @@ main {
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
