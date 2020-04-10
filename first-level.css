@@ -333,28 +333,3 @@ main h1 {
     height: 2.7rem;
   }
 }
-
-@media (max-height: 320px) {
-  /* Registration Section */
-  .reg-content {
-    box-sizing: border-box;
-    width: 70%;
-    height: 90%;
-  }
-  .reg-content img {
-    display: none;
-  }
-  .reg-content form {
-    width: 25rem;
-  }
-  .reg-content .btn-section {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: brown;
-  }
-  .reg-content .send-btn {
-    width: 100%;
-    align-items: center;
-  }
-}
