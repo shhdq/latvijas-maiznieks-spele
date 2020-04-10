@@ -268,7 +268,7 @@ main h1 {
     background-color: white;
   }
   .card {
-    width: 8rem;
+    width: 8.5rem;
     height: 10rem;
   }
   .game-time {
@@ -284,13 +284,17 @@ main h1 {
     font-weight: bold;
     font-size: 2em;
   }
-
+  .rules {
+    margin: 2rem 0;
+  }
   .rules h3 {
-    margin: 1rem 0;
     font-size: 1.5em;
   }
   .rules p {
     margin: 1rem 0;
+    font-size: 1.2em;
+  }
+  .rules a {
     font-size: 1.2em;
   }
   .tell-friend {
