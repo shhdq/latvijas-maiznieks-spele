@@ -9,6 +9,7 @@ html {
   font-size: 12px;
 }
 main {
+  overflow: hidden;
   position: absolute;
   box-sizing: border-box;
   padding: 2rem 0;
