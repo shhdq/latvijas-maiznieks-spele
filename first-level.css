@@ -360,6 +360,7 @@ main h1 {
 
 /* Finish Modal */
 .finish {
+  overflow: hidden;
   z-index: 100;
   width: 100vw;
   height: 100vh;
