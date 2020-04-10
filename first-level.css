@@ -306,4 +306,113 @@ main h1 {
     width: 4rem;
     height: 4rem;
   }
+
+  /* Registration Section */
+  .reg-section {
+    box-sizing: border-box;
+    padding: 4rem 2rem;
+    background-color: rgb(87, 107, 209, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reg-content {
+    box-sizing: border-box;
+    padding: 3rem 0;
+    width: 100vw;
+    position: fixed;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .reg-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #2e3092;
+    width: 20rem;
+  }
+
+  .reg-content form {
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .reg-content form input {
+    margin: 0.5rem 0;
+    border: 1px solid #2e3092;
+    border-radius: 17px;
+    height: 2rem;
+    padding: 0 1rem;
+  }
+  .reg-section img {
+    width: 15rem;
+  }
+  .check-box {
+    margin: 0.5rem 0;
+    text-align: left;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .check-box-group {
+    width: 20rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .check-box-group p {
+    opacity: 0.7;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #2e3092;
+  }
+  ::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: #2e3092;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: "Roboto", sans-serif;
+    color: #2e3092;
+    font-style: italic;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-family: "Roboto", sans-serif;
+    color: #2e3092;
+    font-style: italic;
+  }
+  .btn-section {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 50px;
+    width: 10rem;
+    height: 2.4rem;
+    border: none;
+    background-color: #f49b00;
+  }
 }
