@@ -9,7 +9,7 @@ html {
   font-size: 12px;
 }
 main {
-  position: relative;
+  position: absolute;
   box-sizing: border-box;
   padding: 2rem 0;
   font-family: "Roboto", sans-serif;
@@ -135,29 +135,26 @@ main h1 {
 /* Registartion PopUp */
 
 .reg-section {
-  box-sizing: border-box;
-  padding: 4rem 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(87, 107, 209, 0.5);
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .reg-content {
-  box-sizing: border-box;
-  padding: 3rem 0;
-  width: 30rem;
-  height: 40rem;
+  padding: 4rem 0;
+  width: 40vw;
+  height: 80vh;
   position: fixed;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: center;
   background-color: white;
   border-radius: 20px;
 }
@@ -261,6 +258,9 @@ main h1 {
   }
 }
 @media (max-width: 800px) {
+  .reg-section {
+    box-sizing: border-box;
+  }
 }
 @media (max-width: 700px) {
   main h1 {
@@ -326,7 +326,7 @@ main h1 {
   /* Registration Section */
 
   .reg-content {
-    padding: 3rem 0;
+    box-sizing: border-box;
     width: 95vw;
   }
   .reg-section h3 {
