@@ -138,7 +138,7 @@ main h1 {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(87, 107, 209, 0.5);
+  background-color: rgb(0, 0, 0, 0.6);
   position: fixed;
   display: none;
   flex-direction: column;
@@ -440,5 +440,13 @@ main h1 {
   .finish h3 {
     font-size: 3em;
     margin-bottom: 1rem;
+  }
+}
+@media (max-height: 500px) {
+  .finish-content {
+    width: 95%;
+  }
+  .finish-content img {
+    display: none;
   }
 }
