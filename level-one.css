@@ -92,7 +92,8 @@ h1 {
   }
 
   .game-info .level-counter {
-    margin: 9px 0;
+    margin-top: 12px;
+    margin-bottom: 15px;
   }
   .game-info .level-counter p {
     font-size: 13px;
