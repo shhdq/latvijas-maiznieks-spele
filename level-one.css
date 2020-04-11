@@ -244,15 +244,22 @@ h1 {
   .social-container {
     padding-bottom: 64px;
     margin-top: 38px;
-    max-width: 305px;
+    max-width: 268px;
   }
   .social-container h2 {
     font-size: 20px;
     margin-bottom: 34px;
   }
   .social-container .cocial-icon-grid {
-    margin-top: 24px;
+    max-width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .social-container .social-icon-grid img {
+    margin: 0 20px;
+    border-radius: 50%;
+    width: 43.47px;
+    height: 43.47px;
   }
 }
