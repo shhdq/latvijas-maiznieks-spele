@@ -1,0 +1,43 @@
+<section class="grid-container">
+        <div class="grid">
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" class="front-face" alt="Latvijas Maiznieks Logo">
+                <img src="./assets/2096-ciabatta-tumsa.png" class="back-face" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" class="front-face" alt="Latvijas Maiznieks Logo">
+                <img src="./assets/2096-ciabatta-tumsa.png" class="back-face" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+            <div class="card">
+                <img src="./assets/Desktop/levels/hidden-field.png" alt="Latvijas Maiznieks Logo">
+            </div>
+            <!--// End Of Card -->
+        </div>
+        <!--// End Of Grid -->
+    </section>

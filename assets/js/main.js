@@ -1,7 +1,4 @@
-const sendBtn = document.getElementById("btn-send");
-const registration = document.getElementById("reg-popup");
-
-sendBtn.addEventListener("click", () => {
-  registration.style.display = "none";
-  console.log("Works");
+let card = document.querySelector(".card");
+card.addEventListener("click", function () {
+  card.classList.toggle("is-flipped");
 });
