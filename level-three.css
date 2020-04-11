@@ -115,12 +115,12 @@ h1 {
 .grid-container .grid {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 18px;
+  grid-gap: 4px;
   grid-template-columns: repeat(5, auto);
 }
 .grid-container .grid .card {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -133,8 +133,8 @@ h1 {
   position: relative;
 }
 .card img {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
 }
 .card.is-flipped {
   transform: rotateY(180deg);
@@ -162,13 +162,13 @@ h1 {
     grid-template-columns: repeat(4, auto);
   }
   .grid-container .grid .card {
-    width: 92px;
-    height: 92px;
+    width: 68px;
+    height: 68px;
     background-size: cover;
   }
   .grid-container img {
-    width: 92px;
-    height: 92px;
+    width: 68px;
+    height: 68px;
   }
 }
 @media (max-width: 1000px) {
