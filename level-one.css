@@ -254,7 +254,7 @@ h1 {
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .social-container .social-icon-grid img {
     margin: 0;
