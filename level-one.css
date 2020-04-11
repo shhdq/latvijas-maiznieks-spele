@@ -158,7 +158,22 @@ h1 {
   font-weight: 900;
   font-size: 40px;
 }
-
+@media (max-width: 600px) {
+  .game-time {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+  }
+  .game-time p {
+    margin-top: 19px;
+    font-size: 18px;
+  }
+  .game-time #game-time {
+    font-weight: 900;
+    font-size: 25px;
+  }
+}
 /* Game Rules */
 
 .game-rules {
