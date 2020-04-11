@@ -73,7 +73,7 @@ h1 {
   font-weight: 900;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .heading-container h1 {
     text-align: center;
     margin-top: 23px;
@@ -101,6 +101,7 @@ h1 {
     font-size: 13px;
   }
 }
+/* End Of 600px */
 
 /* Grid Container */
 .grid-container {
