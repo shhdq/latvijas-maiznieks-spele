@@ -101,7 +101,7 @@ h1 {
     font-size: 13px;
   }
 }
-/* End Of 600px */
+/* End Of 800px */
 
 /* Grid Container */
 .grid-container {
@@ -124,6 +124,21 @@ h1 {
 }
 
 @media (max-width: 800px) {
+  .grid-container .grid {
+    grid-gap: 0;
+    grid-template-columns: repeat(4, auto);
+  }
+  .grid-container .grid .card {
+    width: 92px;
+    height: 92px;
+    background-size: cover;
+  }
+  .grid-container img {
+    width: 92px;
+    height: 92px;
+  }
+}
+@media (max-width: 1000px) {
   .grid-container .grid {
     grid-gap: 0;
     grid-template-columns: repeat(4, auto);
