@@ -109,16 +109,16 @@ h1 {
   justify-content: center;
 }
 .grid-container .grid {
-  width: 100%;
   box-sizing: border-box;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 18px;
   grid-template-columns: repeat(3, auto);
 }
 .grid-container .grid .card {
   width: 172px;
   height: 172px;
 }
+
 @media (max-width: 600px) {
   .grid-container {
     display: flex;
