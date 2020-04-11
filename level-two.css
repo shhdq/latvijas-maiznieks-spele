@@ -115,12 +115,12 @@ h1 {
 .grid-container .grid {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 18px;
+  grid-gap: 17px;
   grid-template-columns: repeat(4, auto);
 }
 .grid-container .grid .card {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
   transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -133,8 +133,8 @@ h1 {
   position: relative;
 }
 .card img {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
 }
 .card.is-flipped {
   transform: rotateY(180deg);
@@ -157,16 +157,16 @@ h1 {
 }
 @media (max-width: 800px) {
   .grid-container .grid {
-    grid-gap: 0;
+    grid-gap: 8px;
   }
   .grid-container .grid .card {
-    width: 92px;
-    height: 92px;
+    width: 68px;
+    height: 68px;
     background-size: cover;
   }
   .grid-container img {
-    width: 92px;
-    height: 92px;
+    width: 68px;
+    height: 68px;
   }
 }
 /* Game Time Info */

@@ -158,7 +158,7 @@ h1 {
 }
 @media (max-width: 800px) {
   .grid-container .grid {
-    grid-gap: 0;
+    grid-gap: 8px;
   }
   .grid-container .grid .card {
     width: 92px;

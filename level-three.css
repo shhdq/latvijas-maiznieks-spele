@@ -115,7 +115,7 @@ h1 {
 .grid-container .grid {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 4px;
+  grid-gap: 17px;
   grid-template-columns: repeat(5, auto);
 }
 .grid-container .grid .card {
@@ -158,7 +158,7 @@ h1 {
 
 @media (max-width: 800px) {
   .grid-container .grid {
-    grid-gap: 0;
+    grid-gap: 8px;
     grid-template-columns: repeat(4, auto);
   }
   .grid-container .grid .card {
