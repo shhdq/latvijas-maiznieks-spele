@@ -121,7 +121,7 @@ h1 {
 
 @media (max-width: 600px) {
   .grid-container {
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,6 +137,7 @@ h1 {
   .grid-container .grid .card {
     width: 92px;
     height: 92px;
+    background-size: cover;
   }
   .grid-container img {
     width: 92px;
