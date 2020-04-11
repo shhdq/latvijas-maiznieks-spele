@@ -94,11 +94,14 @@ h1 {
   .game-info .level-counter {
     margin-top: 12px;
     margin-bottom: 15px;
+    width: 110px;
+    height: 22px;
   }
   .game-info .level-counter p {
     font-size: 13px;
   }
 }
+
 /* Grid Container */
 .grid-container {
   width: 100%;
