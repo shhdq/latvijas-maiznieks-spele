@@ -133,6 +133,9 @@ h1 {
   cursor: pointer;
   position: relative;
 }
+#red {
+  background-color: red;
+}
 .card img {
   width: 202px;
   height: 202px;
