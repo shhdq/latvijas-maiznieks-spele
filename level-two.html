@@ -2,224 +2,258 @@
 <html lang="lv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latvijas Maiznieks Spēle</title>
-    <link rel="stylesheet" href="level-two.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latvijas Maiznieks Spēle</title>
+        <link rel="stylesheet" href="level-two.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="heading-container">
-            <h1>Atrodi līdzīgos!</h1>
+        <!-- Header -->
+        <header>
+                <div class="heading-container">
+                        <h1>Atrodi līdzīgos!</h1>
+                </div>
+                <!--// Heading Container -->
+
+                <div class="game-info">
+                        <div class="counter-container">
+                                <p>Šobrīd attrasti <span id="counter">0</span> no <span id="counter-max">4</span></p>
+                        </div>
+                        <!--// Counter Countainer -->
+
+                        <div class="level-counter">
+                                <p>2. no 3 līmeņiem</p>
+                        </div>
+                        <!--// Level Counter -->
+                </div>
+                <!--// Game Info Container -->
+        </header>
+        <!--// Header -->
+
+
+        <!-- Grid Container -->
+        <section class="grid-container">
+                <div class="grid">
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-1.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-1.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-2.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-2.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-3.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-3.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-4.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-4.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-5.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-5.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-6.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-6.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-7.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-7.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-8.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                        <div class="card">
+                                <div class="card__face card__face--front"><img
+                                                src="./assets/Desktop/levels/hidden-field.png"
+                                                alt="Latvijas maiznieks logo">
+                                </div>
+                                <div class="card__face card__face--back"><img
+                                                src="./assets/maizes-reveal/2-lvl/lvl2-8.jpg"
+                                                alt="Latvijas maiznieks produkts">
+                                </div>
+                        </div>
+                        <!--// End Of Card -->
+                </div>
+                <!--// End Of Grid -->
+        </section>
+        <!--// End Of Grid Container -->
+
+        <!-- Game Time Info -->
+        <div class="game-time">
+                <p>Spēles laiks: <span id="game-time">0:02</span></p>
         </div>
-        <!--// Heading Container -->
+        <!--// End Of Time Info -->
 
-        <div class="game-info">
-            <div class="counter-container">
-                <p>Šobrīd attrasti <span id="counter">0</span> no <span id="counter-max">4</span></p>
-            </div>
-            <!--// Counter Countainer -->
-
-            <div class="level-counter">
-                <p>2. no 3 līmeņiem</p>
-            </div>
-            <!--// Level Counter -->
+        <!-- Game Rules -->
+        <div class="game-rules">
+                <h1>Spēles noteikumi</h1>
+                <p>Izklaidējies, spēlē Latvijas Maiznieka Atmiņas spēli un tiec pie vērtīgām balvām! Viss ir vienkārši –
+                        pēc
+                        iespējas ātrāk
+                        mēģini atklāt visus vienādo Latvijas Maiznieka attēlu pārus, atstāj savus kontaktus un piedalies
+                        balvu
+                        izlozē! Sīkāki
+                        spēles noteikumi</p>
+                <a href="#">Sīkāki spēles noteikumi</a>
         </div>
-        <!--// Game Info Container -->
-    </header>
-    <!--// Header -->
+        <!--// Game Rules -->
 
+        <!-- Social Icons -->
+        <div class="social-container">
+                <h2>Pastāsti draugam</h2>
 
-    <!-- Grid Container -->
-    <section class="grid-container">
-        <div class="grid">
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
+                <div class="social-icon-grid">
+                        <img src="./assets/Desktop/levels/twitter.png" alt="Twitter ikona">
+                        <img src="./assets/Desktop/levels/facebook.png" alt="Facebook ikona">
+                        <img src="./assets/Desktop/levels/instagram.png" alt="Instagram ikona">
+                        <img src="./assets/Desktop/levels/draugiem.png" alt="Draugiem ikona">
                 </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-1.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-1.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-2.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-2.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-3.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-3.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-4.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-4.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-5.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-5.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-6.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-6.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-7.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-7.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-8.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
-            <div class="card">
-                <div class="card__face card__face--front"><img src="./assets/Desktop/levels/hidden-field.png"
-                        alt="Latvijas maiznieks logo">
-                </div>
-                <div class="card__face card__face--back"><img src="./assets/maizes-reveal/2-lvl/lvl2-8.jpg"
-                        alt="Latvijas maiznieks produkts">
-                </div>
-            </div>
-            <!--// End Of Card -->
+                <!--// Social Icon Grid -->
         </div>
-        <!--// End Of Grid -->
-    </section>
-    <!--// End Of Grid Container -->
-
-    <!-- Game Time Info -->
-    <div class="game-time">
-        <p>Spēles laiks: <span id="game-time">0:02</span></p>
-    </div>
-    <!--// End Of Time Info -->
-
-    <!-- Game Rules -->
-    <div class="game-rules">
-        <h1>Spēles noteikumi</h1>
-        <p>Izklaidējies, spēlē Latvijas Maiznieka Atmiņas spēli un tiec pie vērtīgām balvām! Viss ir vienkārši – pēc
-            iespējas ātrāk
-            mēģini atklāt visus vienādo Latvijas Maiznieka attēlu pārus, atstāj savus kontaktus un piedalies balvu
-            izlozē! Sīkāki
-            spēles noteikumi</p>
-        <a href="#">Sīkāki spēles noteikumi</a>
-    </div>
-    <!--// Game Rules -->
-
-    <!-- Social Icons -->
-    <div class="social-container">
-        <h2>Pastāsti draugam</h2>
-
-        <div class="social-icon-grid">
-            <img src="./assets/Desktop/levels/twitter.png" alt="Twitter ikona">
-            <img src="./assets/Desktop/levels/facebook.png" alt="Facebook ikona">
-            <img src="./assets/Desktop/levels/instagram.png" alt="Instagram ikona">
-            <img src="./assets/Desktop/levels/draugiem.png" alt="Draugiem ikona">
-        </div>
-        <!--// Social Icon Grid -->
-    </div>
-    <!--// Social Icons -->
+        <!--// Social Icons -->
 
 
 
-    <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -50,11 +50,12 @@ main {
   background-color: white;
 }
 .col-one h1 {
-  font-size: 1.6em;
+  font-size: 80px;
+  font-weight: 900;
 }
 .col-one h3 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 40px;
 }
 .col-one .mobile-image {
   display: none;
@@ -91,6 +92,14 @@ main {
   .col-one {
     padding: 1rem 0;
     justify-content: space-evenly;
+  }
+  .col-one h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .col-one h3 {
+    font-weight: 400;
+    font-size: 20px;
   }
   .play-btn {
     width: 50%;
