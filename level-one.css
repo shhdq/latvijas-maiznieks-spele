@@ -160,10 +160,11 @@ h1 {
 }
 @media (max-width: 600px) {
   .game-time {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding-bottom: 40px;
-    border-bottom: 1px solid white;
+    padding-bottom: 19px;
   }
   .game-time p {
     margin-top: 19px;
@@ -182,10 +183,12 @@ h1 {
 }
 .game-rules h1 {
   text-transform: uppercase;
+  font-size: 30px;
 }
 .game-rules p {
   margin-top: 28px;
   text-align: left;
+  font-size: 16px;
 }
 .game-rules a {
   margin-top: 20px;
@@ -196,7 +199,22 @@ h1 {
   color: #97a4ff;
   font-weight: 400;
 }
-
+@media (max-width: 600px) {
+  .game-rules {
+    max-width: 305px;
+    margin-top: 35px;
+  }
+  .game-rules h1 {
+    font-size: 25px;
+  }
+  .game-rules p {
+    margin-top: 16px;
+  }
+  .game-rules a {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 /* Social Container */
 .social-container {
   padding-bottom: 230px;
@@ -208,10 +226,9 @@ h1 {
 .social-container h2 {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
 }
 .social-container .cocial-icon-grid {
-  margin-top: 24px;
   display: flex;
   align-items: center;
 }
@@ -222,4 +239,20 @@ h1 {
   height: 55px;
   box-shadow: 6px 6px 20px #00000085;
   border: 1px solid #00000000;
+}
+@media (max-width: 600px) {
+  .social-container {
+    padding-bottom: 64px;
+    margin-top: 38px;
+    max-width: 305px;
+  }
+  .social-container h2 {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+  .social-container .cocial-icon-grid {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+  }
 }
