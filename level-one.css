@@ -115,7 +115,7 @@ h1 {
 .grid-container .grid {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 18px;
+  grid-gap: 9px;
   grid-template-columns: repeat(3, auto);
   perspective: 1000px;
 }

@@ -115,7 +115,7 @@ h1 {
 .grid-container .grid {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 17px;
+  grid-gap: 8.5px;
   grid-template-columns: repeat(4, auto);
 }
 .grid-container .grid .card {
