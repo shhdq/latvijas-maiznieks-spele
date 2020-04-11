@@ -123,7 +123,7 @@ h1 {
   height: 172px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .grid-container .grid {
     grid-gap: 0;
   }
@@ -153,7 +153,7 @@ h1 {
   font-weight: 900;
   font-size: 40px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .game-time {
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@ h1 {
   color: #97a4ff;
   font-weight: 400;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .game-rules {
     max-width: 305px;
     margin-top: 35px;
@@ -236,7 +236,7 @@ h1 {
   box-shadow: 6px 6px 20px #00000085;
   border: 1px solid #00000000;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .social-container {
     padding-bottom: 64px;
     margin-top: 38px;
