@@ -295,7 +295,7 @@ h1 {
 #level-end-modal {
   position: fixed;
   width: 100%;
-  height: ;
+  height: 100%;
   display: none;
   flex-grow: 1;
   flex-direction: column;
