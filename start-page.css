@@ -10,9 +10,9 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
-  width: 100%;
-  background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
-  background-color: #cccccc;
+  width: 100vw;
+  /* background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png"); */
+  background-color: red;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,6 +53,8 @@ h1 {
 /* 255,255,255,0.34 */
 
 .main-section {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   padding-top: 59px;
   padding-left: 109px;
@@ -95,4 +97,23 @@ h1 {
   height: 936px;
   display: flex;
   align-items: flex-end;
+}
+
+@media (max-width: 1600px) {
+  body {
+    background-color: green;
+  }
+  .logo {
+    width: 70%;
+  }
+  .desktop-img {
+    width: 75%;
+  }
+
+  .col-one h1 {
+    font-size: auto;
+  }
+  .col-one {
+    width: 90%;
+  }
 }
