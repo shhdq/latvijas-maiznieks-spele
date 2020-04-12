@@ -4,6 +4,8 @@ const body = document.getElementById("body");
 let counter = document.getElementById("counter");
 let counterNumber = 1;
 
+const maxCounter = 4;
+
 let gameTime = document.getElementById("game-time");
 let lockDeck = false;
 let hasFlippedCard = false;
@@ -18,6 +20,7 @@ window.onload = () => {
   let intervalId = null;
 
   intervalId = setInterval(startTimer, 1000);
+
   function startTimer() {
     ++totalSeconds;
     hour = Math.floor(totalSeconds / 3600);
@@ -29,7 +32,9 @@ window.onload = () => {
     document.getElementById("seconds").innerHTML = seconds;
   }
 };
-
+function stopTimer() {
+  totalSeconds.stop();
+}
 function flipCard() {
   if (lockDeck) return;
 
@@ -56,6 +61,14 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? (counter.innerHTML = counterNumber++) : counterNumber;
+
+  if (counterNumber === 5) {
+    setTimeout(() => {
+      alert("sdfsd");
+      stopTimer();
+    }, 1000);
+  }
+
   // if (isMatch) {
   //   counter.innerHTML = counterNumber++ : counterNumber;
   // }

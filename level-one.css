@@ -126,7 +126,7 @@ h1 {
   position: relative;
 }
 .card {
-  transition: transform 1s;
+  transition: transform 600ms;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
