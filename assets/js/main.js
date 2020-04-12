@@ -1,9 +1,13 @@
 const cards = document.querySelectorAll(".card");
-const red = document.getElementById("red-cover");
-
-red.addEventListener("click", () => {
-  alert("Spēle beigusies!");
-});
+const body = document.getElementById("body");
+function gameOver() {
+  alert("Game Over!");
+  body.style.backgroundImage = "none";
+  body.style.backgroundColor = "tomato";
+}
+// red.addEventListener("click", () => {
+//   alert("Spēle beigusies!");
+// });
 
 function flipCard() {
   this.classList.toggle("is-flipped");
