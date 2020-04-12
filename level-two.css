@@ -14,6 +14,7 @@ html {
 
 body {
   width: auto;
+
   height: 100%;
   font-family: "Roboto", sans-serif;
   color: white;
@@ -197,9 +198,12 @@ h1 {
     margin-top: 19px;
     font-size: 18px;
   }
-  .game-time #game-time {
+  .game-time #game-time,
+  #hour,
+  #minute,
+  #seconds {
     font-weight: 900;
-    font-size: 25px;
+    font-size: 40px;
   }
 }
 /* Game Rules */
@@ -287,5 +291,98 @@ h1 {
     border-radius: 50%;
     width: 43.47px;
     height: 43.47px;
+  }
+}
+
+/* Level End Modal */
+#level-end-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00000099;
+  background-size: cover;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: white;
+  width: 635px;
+  height: 681px;
+}
+.modal .modal-heading {
+  text-transform: uppercase;
+  color: #2e3092;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.modal .first-p {
+  color: #2e3092;
+  font-weight: 300;
+  font-size: 25px;
+}
+#level-end-time {
+  font-size: 40px;
+  font-weight: 900;
+  color: #2e3092;
+}
+.modal .second-p {
+  color: #2e3092;
+  font-size: 20px;
+  font-weight: 300;
+}
+.modal-prize-image {
+  width: 458px;
+  height: 334px;
+}
+.next-btn {
+  font-size: 27px;
+  font-weight: 400;
+  background-color: #f49b00;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  width: 367px;
+  height: 65px;
+}
+@media (max-width: 800px) {
+  .modal {
+    width: 299px;
+    height: 527px;
+  }
+  .modal .modal-heading {
+    font-size: 30px;
+  }
+  .modal .first-p {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  #level-end-time {
+    font-size: 27px;
+  }
+  .modal .second-p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .modal-prize-image {
+    width: 288px;
+    height: 210px;
+  }
+  .next-btn {
+    font-size: 20px;
+    font-weight: 400;
+
+    width: 269px;
+    height: 49px;
   }
 }
