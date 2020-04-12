@@ -113,7 +113,9 @@ h1 {
   .col-one h1 {
     font-size: auto;
   }
-  .col-one {
+  .col-one,
+  .col-two {
     width: 90%;
+    height: 90%;
   }
 }
