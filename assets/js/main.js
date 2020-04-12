@@ -2,7 +2,7 @@ const cards = document.querySelectorAll(".card");
 const red = document.getElementById("red-cover");
 
 red.addEventListener("click", () => {
-  alert("Ha ha");
+  alert("Spēle beigusies!");
 });
 
 function flipCard() {
