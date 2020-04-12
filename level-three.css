@@ -121,13 +121,10 @@ h1 {
 .grid-container .grid .card {
   width: 157px;
   height: 157px;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
   position: relative;
 }
 .card {
-  transition: transform 1s;
+  transition: transform 600ms;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
