@@ -11,14 +11,17 @@ let lockDeck = false;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+let intervalId = null;
+let hour = 0;
+let minute = 0;
+let seconds = 0;
+let totalSeconds = 0;
+
+let endTime = document.getElementById("level-end-time");
+
+const modal = document.getElementById("modal");
+
 window.onload = () => {
-  let hour = 0;
-  let minute = 0;
-  let seconds = 0;
-  let totalSeconds = 0;
-
-  let intervalId = null;
-
   intervalId = setInterval(startTimer, 1000);
 
   function startTimer() {
@@ -32,9 +35,13 @@ window.onload = () => {
     document.getElementById("seconds").innerHTML = seconds;
   }
 };
+
 function stopTimer() {
-  totalSeconds.stop();
+  if (totalSeconds) {
+    window.clearInterval(intervalId);
+  }
 }
+
 function flipCard() {
   if (lockDeck) return;
 
@@ -59,19 +66,20 @@ function flipCard() {
 function checkForMatch() {
   // Check Match
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+  let levelModal = document.getElementById("level-end-modal");
 
   isMatch ? (counter.innerHTML = counterNumber++) : counterNumber;
 
   if (counterNumber === 5) {
     setTimeout(() => {
-      alert("sdfsd");
       stopTimer();
+      modal.style.transition = "All 4s";
+      levelModal.style.display = "flex";
+      endTime.innerHTML = totalSeconds;
+      console.log("asdasjd");
     }, 1000);
   }
 
-  // if (isMatch) {
-  //   counter.innerHTML = counterNumber++ : counterNumber;
-  // }
   // Shorter if else
   isMatch ? disableCards() : unFlipCards();
 }
