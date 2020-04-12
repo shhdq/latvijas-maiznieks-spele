@@ -1,6 +1,9 @@
 const cards = document.querySelectorAll(".card");
 const body = document.getElementById("body");
 
+let counter = document.getElementById("counter");
+let counterNumber = 1;
+
 let gameTime = document.getElementById("game-time");
 let lockDeck = false;
 let hasFlippedCard = false;
@@ -31,6 +34,10 @@ function checkForMatch() {
   // Check Match
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
+  isMatch ? (counter.innerHTML = counterNumber++) : counterNumber;
+  // if (isMatch) {
+  //   counter.innerHTML = counterNumber++ : counterNumber;
+  // }
   // Shorter if else
   isMatch ? disableCards() : unFlipCards();
 }
@@ -66,8 +73,8 @@ function resetBoard() {
 // Shuffle Deck
 (function shuffle() {
   cards.forEach((card) => {
-    let randPos = Math.floor(Math.random() * 12);
-    card.getElementsByClassName.order = randPos;
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
   });
 })();
 
