@@ -422,10 +422,11 @@ ul li img {
 @media (max-width: 800px) {
   .modal {
     width: 299px;
-    height: 527px;
+    height: 541px;
   }
   .wrapper {
     width: 262px;
+    height: 497px;
   }
   .modal .modal-heading {
     font-size: 30px;
@@ -452,8 +453,18 @@ ul li img {
   }
   .third-p {
     font-size: 17px;
-    font-weight: 300;
     line-height: 20px;
     width: 262px;
+  }
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    width: 262px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .inner-group {
+    width: 259px;
+    height: 39px;
   }
 }
