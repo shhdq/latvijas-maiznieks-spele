@@ -9,6 +9,27 @@ let lockDeck = false;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+window.onload = () => {
+  let hour = 0;
+  let minute = 0;
+  let seconds = 0;
+  let totalSeconds = 0;
+
+  let intervalId = null;
+
+  intervalId = setInterval(startTimer, 1000);
+  function startTimer() {
+    ++totalSeconds;
+    hour = Math.floor(totalSeconds / 3600);
+    minute = Math.floor((totalSeconds - hour * 3600) / 60);
+    seconds = totalSeconds - (hour * 3600 + minute * 60);
+
+    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("minute").innerHTML = minute;
+    document.getElementById("seconds").innerHTML = seconds;
+  }
+};
+
 function flipCard() {
   if (lockDeck) return;
 
