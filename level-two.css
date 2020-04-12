@@ -200,7 +200,7 @@ h1 {
   #minute,
   #seconds {
     font-weight: 900;
-    font-size: 40px;
+    font-size: 25px;
   }
 }
 /* Game Rules */
@@ -342,14 +342,17 @@ h1 {
   height: 334px;
 }
 .next-btn {
-  font-size: 27px;
-  font-weight: 400;
   background-color: #f49b00;
-  color: white;
   border-radius: 50px;
   border: none;
   width: 367px;
   height: 65px;
+}
+.next-btn a {
+  font-weight: 400;
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 800px) {
   .modal {
@@ -376,10 +379,11 @@ h1 {
     height: 210px;
   }
   .next-btn {
-    font-size: 20px;
-    font-weight: 400;
-
     width: 269px;
     height: 49px;
+  }
+  .next-btn a {
+    font-size: 20px;
+    font-weight: 400;
   }
 }
