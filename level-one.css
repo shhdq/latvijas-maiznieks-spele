@@ -122,7 +122,6 @@ h1 {
 .grid-container .grid .card {
   width: 202px;
   height: 202px;
-
   position: relative;
 }
 .card {
@@ -130,9 +129,6 @@ h1 {
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
-}
-#red {
-  background-color: red;
 }
 .card img {
   width: 202px;
