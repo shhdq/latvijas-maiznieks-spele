@@ -10,6 +10,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body {
+  width: 100%;
   background-image: url("./assets/Desktop/1-Start-page/BG-kitchen.png");
   background-color: #cccccc;
   background-position: center;
@@ -83,6 +84,7 @@ h1 {
   padding-bottom: 20px;
 }
 .col-one p {
+  text-transform: uppercase;
   font-size: 40px;
   text-align: center;
 }
@@ -90,6 +92,7 @@ h1 {
 /* Col Two */
 
 .col-two {
+  height: 936px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
