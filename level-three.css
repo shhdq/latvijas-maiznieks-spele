@@ -152,7 +152,7 @@ h1 {
 .card.is-flipped {
   transform: rotateY(180deg);
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .grid-container .grid {
     grid-gap: 9px;
     grid-template-columns: repeat(5, auto);
