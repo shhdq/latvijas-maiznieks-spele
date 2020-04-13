@@ -485,6 +485,13 @@ label {
   }
 }
 
+@media (max-height: 800px) {
+  .reg-modal {
+    height: auto;
+    overflow-y: scroll;
+  }
+}
+
 /* Level End Modal */
 #level-end-modal {
   position: fixed;
