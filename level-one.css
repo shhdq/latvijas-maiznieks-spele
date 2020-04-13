@@ -172,6 +172,21 @@ h1 {
     height: 92px;
   }
 }
+@media (max-width: 1350px) {
+  .grid-container .grid {
+    background-color: lawngreen;
+    grid-gap: 8px;
+  }
+  .grid-container .grid .card {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+  .grid-container img {
+    width: 92px;
+    height: 92px;
+  }
+}
 /* Game Time Info */
 .game-time {
   position: relative;
