@@ -807,7 +807,6 @@ label {
 }
 @media (max-height: 500px) {
   .modal {
-    background-color: lawngreen;
     width: 500px;
     height: 300px;
   }
