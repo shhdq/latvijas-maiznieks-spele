@@ -77,7 +77,13 @@ h1 {
   color: #2e3092;
   font-weight: 900;
 }
-
+@media (max-width: 1600px) {
+  .heading-container h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+  }
+}
 @media (max-width: 800px) {
   .heading-container h1 {
     text-align: center;
