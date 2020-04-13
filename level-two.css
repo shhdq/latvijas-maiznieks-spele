@@ -120,8 +120,8 @@ h1 {
   perspective: 1000px;
 }
 .grid-container .grid .card {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
   position: relative;
 }
 .card {
@@ -131,8 +131,8 @@ h1 {
   position: relative;
 }
 .card img {
-  width: 202px;
-  height: 202px;
+  width: 157px;
+  height: 157px;
 }
 .card.is-flipped {
   transform: rotateY(180deg);
