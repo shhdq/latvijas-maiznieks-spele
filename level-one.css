@@ -491,14 +491,18 @@ label {
     height: 42px;
   }
 }
-@media (max-height: 400px) {
+@media (max-height: 500px) {
   .reg-modal {
     background-color: lawngreen;
     width: 540px;
     height: 310px;
   }
+  .reg-wrapper {
+    width: 440px;
+    height: 300px;
+  }
   .reg-modal .reg-heading {
-    font-size: 15px;
+    font-size: 18px;
   }
   .reg-modal img {
     display: none;
