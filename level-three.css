@@ -472,7 +472,6 @@ ul li img {
 @media (max-height: 500px) {
   .modal {
     overflow-y: scroll;
-    background-color: lawngreen;
     width: 500px;
     height: 300px;
   }
