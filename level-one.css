@@ -493,7 +493,6 @@ label {
 }
 @media (max-height: 500px) {
   .reg-modal {
-    background-color: lawngreen;
     width: 540px;
     height: 310px;
   }
