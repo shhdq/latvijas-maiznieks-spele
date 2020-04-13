@@ -73,7 +73,7 @@ h1 {
   font-weight: 900;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .heading-container h1 {
     text-align: center;
     margin-top: 23px;
@@ -153,7 +153,7 @@ h1 {
 .card.is-flipped {
   transform: rotateY(180deg);
 }
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .grid-container .grid {
     grid-gap: 8px;
   }
