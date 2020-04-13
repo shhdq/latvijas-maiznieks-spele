@@ -299,8 +299,8 @@ h1 {
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-grow: ;
+  display: none;
+  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -362,44 +362,7 @@ h1 {
   transition: All 600ms ease-in-out;
   opacity: 0.7;
 }
-@media (max-width: 800px) {
-  .modal {
-    width: 299px;
-    height: 527px;
-  }
-  .wrapper-end {
-    width: 268px;
-  }
-  .modal .modal-heading {
-    font-size: 30px;
-  }
-  .modal .first-p {
-    text-align: left;
-    font-size: 20px;
-    line-height: 34px;
-  }
-  #level-end-time {
-    font-size: 27px;
-  }
-  .modal .second-p {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 22px;
-  }
-  .modal-prize-image {
-    width: 288px;
-    height: 210px;
-  }
-  .next-btn {
-    width: 269px;
-    height: 49px;
-  }
-  .next-btn a {
-    font-size: 20px;
-    font-weight: 400;
-  }
-}
+
 @media (max-width: 1500px) {
   .modal {
     width: 600px;
@@ -458,6 +421,9 @@ h1 {
 }
 @media (max-width: 800px) {
   .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 299px;
     height: 527px;
   }
