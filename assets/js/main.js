@@ -11,36 +11,30 @@ let lockDeck = false;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-let intervalId = null;
-let hour = 0;
-let minute = 0;
-let seconds = 0;
-let totalSeconds = 0;
-
 let endTime = document.getElementById("level-end-time");
 
 const modal = document.getElementById("modal");
+const test = document.getElementById("test");
 
-window.onload = () => {
-  intervalId = setInterval(startTimer, 1000);
+const startTime = 0;
+let time = startTime * 60;
 
-  function startTimer() {
-    ++totalSeconds;
-    hour = Math.floor(totalSeconds / 3600);
-    minute = Math.floor((totalSeconds - hour * 3600) / 60);
-    seconds = totalSeconds - (hour * 3600 + minute * 60);
+function updateTime() {
+  setInterval(updateTime, 1000);
+  const minutes = Math.floor(time / 60);
+  let seconds = time % 60;
 
-    document.getElementById("minute").innerHTML = minute;
-    document.getElementById("seconds").innerHTML = seconds;
-  }
-};
+  gameTime.innerHTML = `${minutes}:${seconds}`;
 
-function stopTimer() {
-  if (totalSeconds) {
-    window.clearInterval(intervalId);
-  }
+  time++;
 }
 
+// Stop Time
+function stopTimer() {
+  window.clearInterval(intervalId);
+}
+
+// Flip Card
 function flipCard() {
   if (lockDeck) return;
 
@@ -51,6 +45,7 @@ function flipCard() {
   if (!hasFlippedCard) {
     // First Click
     hasFlippedCard = true;
+
     firstCard = this;
     return;
   }
