@@ -490,6 +490,9 @@ label {
     height: auto;
     overflow-y: scroll;
   }
+  .reg-wrapper img {
+    display: none;
+  }
 }
 
 /* Level End Modal */
