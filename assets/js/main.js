@@ -1,37 +1,36 @@
 const cards = document.querySelectorAll(".card");
-const body = document.getElementById("body");
-
 let counter = document.getElementById("counter");
-let counterNumber = 1;
+let gameTime = document.getElementById("game-time");
+const modal = document.getElementById("modal");
+const levelEndTime = document.getElementById("level-end-time");
 
+let gameMinutes = document.getElementById("minutes");
+let gameSeconds = document.getElementById("seconds");
+
+let counterNumber = 1;
 const maxCounter = 4;
 
-let gameTime = document.getElementById("game-time");
 let lockDeck = false;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-let endTime = document.getElementById("level-end-time");
+let minutes = 0;
+let seconds = 0;
 
-const modal = document.getElementById("modal");
-const test = document.getElementById("test");
-
-const startTime = 0;
-let time = startTime * 60;
-
-function updateTime() {
-  setInterval(updateTime, 1000);
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-
-  gameTime.innerHTML = `${minutes}:${seconds}`;
-
-  time++;
+// Stopwatch Function
+function timer() {
+  seconds++;
+  let timeInterval = setInterval(timer, 1000);
+  document.getElementById("seconds").innerHTML = seconds;
+  if (seconds === 60) {
+    document.getElementById("minutes").innerHTML = ++minutes;
+    seconds = 0;
+  }
 }
 
 // Stop Time
 function stopTimer() {
-  window.clearInterval(intervalId);
+  window.clearInterval(timeInterval);
 }
 
 // Flip Card
@@ -67,8 +66,9 @@ function checkForMatch() {
   if (counterNumber === 5) {
     setTimeout(() => {
       // Here Also need to Call stop time function
+      stopTimer();
       levelModal.style.display = "flex";
-      endTime.innerHTML = totalSeconds;
+      levelEndTime.innerHTML = `${minutes}:${seconds}`;
       console.log("asdasjd");
     }, 1000);
   }

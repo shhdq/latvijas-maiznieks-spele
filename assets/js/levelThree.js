@@ -1,46 +1,40 @@
 const cards = document.querySelectorAll(".card");
-const body = document.getElementById("body");
-
 let counter = document.getElementById("counter");
-let counterNumber = 1;
+let gameTime = document.getElementById("game-time");
+const modal = document.getElementById("modal");
+const levelEndTime = document.getElementById("level-end-time");
 
+let gameMinutes = document.getElementById("minutes");
+let gameSeconds = document.getElementById("seconds");
+
+let counterNumber = 1;
 const maxCounter = 4;
 
-let gameTime = document.getElementById("game-time");
 let lockDeck = false;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
-let intervalId = null;
-let hour = 0;
-let minute = 0;
+let minutes = 0;
 let seconds = 0;
-let totalSeconds = 0;
 
-let endTime = document.getElementById("level-end-time");
+// Stopwatch Function
+function timer() {
+  seconds++;
 
-const modal = document.getElementById("modal");
-
-window.onload = () => {
-  intervalId = setInterval(startTimer, 1000);
-
-  function startTimer() {
-    ++totalSeconds;
-    hour = Math.floor(totalSeconds / 3600);
-    minute = Math.floor((totalSeconds - hour * 3600) / 60);
-    seconds = totalSeconds - (hour * 3600 + minute * 60);
-
-    document.getElementById("minute").innerHTML = minute;
-    document.getElementById("seconds").innerHTML = seconds;
-  }
-};
-
-function stopTimer() {
-  if (totalSeconds) {
-    window.clearInterval(intervalId);
+  document.getElementById("seconds").innerHTML = seconds;
+  if (seconds === 60) {
+    document.getElementById("minutes").innerHTML = ++minutes;
+    seconds = 0;
   }
 }
 
+let timeInterval = setInterval(timer, 1000);
+// Stop Time
+function stopTimer() {
+  window.clearInterval(timeInterval);
+}
+
+// FlipCard Function
 function flipCard() {
   if (lockDeck) return;
 
@@ -71,10 +65,10 @@ function checkForMatch() {
 
   if (counterNumber === 11) {
     setTimeout(() => {
+      // Here Also need to Call stop time function
       stopTimer();
       levelModal.style.display = "flex";
-      endTime.innerHTML = totalSeconds;
-      console.log("asdasjd");
+      levelEndTime.innerHTML = `${minutes}:${seconds}`;
     }, 1000);
   }
 
