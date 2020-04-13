@@ -83,7 +83,6 @@ function checkForMatch() {
     case 9:
       setTimeout(() => {
         stopTimer();
-        modal.style.transition = "All 4s";
         levelModal.style.display = "flex";
         endTime.innerHTML = totalSeconds;
         console.log("asdasjd");

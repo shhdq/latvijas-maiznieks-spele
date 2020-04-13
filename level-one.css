@@ -172,7 +172,7 @@ h1 {
     height: 92px;
   }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1600px) {
   .grid-container .grid {
     grid-gap: 8px;
   }
