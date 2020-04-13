@@ -226,6 +226,26 @@ h1 {
     font-size: 25px;
   }
 }
+@media (max-width: 1350px) {
+  .game-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding-bottom: 19px;
+  }
+  .game-time p {
+    margin-top: 19px;
+    font-size: 18px;
+  }
+  .game-time #game-time,
+  #hour,
+  #minute,
+  #seconds {
+    font-weight: 900;
+    font-size: 25px;
+  }
+}
 /* Game Rules */
 
 .game-rules {
@@ -267,6 +287,22 @@ h1 {
     font-size: 16px;
   }
 }
+@media (max-width: 1350px) {
+  .game-rules {
+    max-width: 305px;
+    margin-top: 35px;
+  }
+  .game-rules h1 {
+    font-size: 25px;
+  }
+  .game-rules p {
+    margin-top: 16px;
+  }
+  .game-rules a {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 /* Social Container */
 .social-container {
   padding-bottom: 230px;
@@ -293,6 +329,27 @@ h1 {
   border: 1px solid #00000000;
 }
 @media (max-width: 800px) {
+  .social-container {
+    padding-bottom: 64px;
+    margin-top: 38px;
+    width: 268px;
+  }
+  .social-container h2 {
+    font-size: 20px;
+    margin-bottom: 34px;
+  }
+  .social-container .cocial-icon-grid {
+    width: 300px;
+    display: flex;
+  }
+  .social-container .social-icon-grid img {
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 43.47px;
+    height: 43.47px;
+  }
+}
+@media (max-width: 1350px) {
   .social-container {
     padding-bottom: 64px;
     margin-top: 38px;
