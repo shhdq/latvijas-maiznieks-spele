@@ -73,7 +73,7 @@ h1 {
   font-weight: 900;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .heading-container h1 {
     text-align: center;
     margin-top: 23px;
@@ -152,9 +152,9 @@ h1 {
 .card.is-flipped {
   transform: rotateY(180deg);
 }
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
   .grid-container .grid {
-    grid-gap: 0;
+    grid-gap: 9px;
     grid-template-columns: repeat(5, auto);
   }
   .grid-container .grid .card {
@@ -199,7 +199,7 @@ h1 {
   font-weight: 900;
   font-size: 40px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .game-time {
     display: flex;
     align-items: center;
@@ -241,7 +241,7 @@ h1 {
   color: #97a4ff;
   font-weight: 400;
 }
-@media (max-width: 800px) {
+@media (max-width: 1500px) {
   .game-rules {
     max-width: 305px;
     margin-top: 35px;
