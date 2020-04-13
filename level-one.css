@@ -491,7 +491,67 @@ label {
     height: 42px;
   }
 }
+@media (max-height: 400px) {
+  .reg-modal {
+    background-color: lawngreen;
+    width: 540px;
+    height: 310px;
+  }
+  .reg-modal .reg-heading {
+    font-size: 15px;
+  }
+  .reg-modal img {
+    display: none;
+  }
 
+  form {
+    width: 350px;
+  }
+  form .input-group input {
+    margin-top: 8px;
+    padding-left: 17px;
+    font-size: 12px;
+    width: 350px;
+    height: 24px;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+    font-size: 16px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  .check-box-wrapper {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .check-box-group {
+    width: 350px;
+  }
+  label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .send-btn-group {
+    display: flex;
+    justify-content: flex-end;
+    width: 350px;
+  }
+  .send-btn-group button {
+    font-size: 22px;
+    font-weight: 400;
+    width: 350px;
+    height: 38px;
+  }
+}
 /* Level End Modal */
 #level-end-modal {
   position: fixed;
