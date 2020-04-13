@@ -41,6 +41,11 @@ h1 {
   font-weight: 900;
   font-size: 75px;
 }
+@media (max-width: 1500px) {
+  .heading-container h1 {
+    font-size: 40px;
+  }
+}
 .game-info {
   margin-top: 12px;
   display: flex;
@@ -298,7 +303,7 @@ h1 {
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
@@ -315,6 +320,13 @@ h1 {
   background-color: white;
   width: 635px;
   height: 714px;
+}
+@media only screen and (max-height: 650px) {
+  .reg-modal {
+    background-color: red !important;
+    width: 600px !important;
+    height: 300px !important;
+  }
 }
 .reg-wrapper {
   display: flex;
@@ -417,6 +429,7 @@ label {
 
 @media (max-width: 800px) {
   .reg-modal {
+    background-color: lawngreen;
     width: 299px;
     height: 607px;
   }
@@ -485,22 +498,12 @@ label {
   }
 }
 
-@media (max-height: 800px) {
-  .reg-modal {
-    height: auto;
-    overflow-y: scroll;
-  }
-  .reg-wrapper img {
-    display: none;
-  }
-}
-
 /* Level End Modal */
 #level-end-modal {
   position: fixed;
   width: 100%;
   height: 100%;
-  display: none;
+  display: flex;
   flex-grow: 1;
   flex-direction: column;
   align-items: center;
