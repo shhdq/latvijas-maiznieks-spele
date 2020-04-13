@@ -64,36 +64,14 @@ function checkForMatch() {
 
   isMatch ? (counter.innerHTML = counterNumber++) : counterNumber;
 
-  switch (counterNumber) {
-    case 5:
-      setTimeout(() => {
-        stopTimer();
-        modal.style.transition = "All 4s";
-        levelModal.style.display = "flex";
-        endTime.innerHTML = totalSeconds;
-        console.log("asdasjd");
-      }, 1000);
-      break;
-
-    case 9:
-      setTimeout(() => {
-        stopTimer();
-        levelModal.style.display = "flex";
-        endTime.innerHTML = totalSeconds;
-        console.log("asdasjd");
-      }, 1000);
-      break;
+  if (counterNumber === 5) {
+    setTimeout(() => {
+      // Here Also need to Call stop time function
+      levelModal.style.display = "flex";
+      endTime.innerHTML = totalSeconds;
+      console.log("asdasjd");
+    }, 1000);
   }
-
-  // if (counterNumber === 5  counterNumber === 9) {
-  //   setTimeout(() => {
-  //     stopTimer();
-  //     modal.style.transition = "All 4s";
-  //     levelModal.style.display = "flex";
-  //     endTime.innerHTML = totalSeconds;
-  //     console.log("asdasjd");
-  //   }, 1000);
-  // }
 
   // Shorter if else
   isMatch ? disableCards() : unFlipCards();
